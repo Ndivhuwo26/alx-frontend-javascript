@@ -1,10 +1,11 @@
-/*ES6’s arrow syntax of the function add (it will be an anonymous function after)
+/*
+ * ES6’s arrow syntax of the function add (it will be an anonymous function after)
 */
-export default function getNeighborhoodsList(){
+export default function getNeighborhoodsList() {
   this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
 
   const self = this;
-  this.addNeighborhood = (newNeighborhood) =>{
+  this.addNeighborhood = (newNeighborhood) => {
     self.sanFranciscoNeighborhoods.push(newNeighborhood);
     return self.sanFranciscoNeighborhoods;
   };
